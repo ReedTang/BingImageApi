@@ -36,12 +36,12 @@ jobs:
           python spider.py
       - name: Commit files
         run: |
-          git config --local user.email "i@ningkai.wang"
-          git config --local user.name "WangNingkai"
+          git config --local user.email "18652958898@163.com"
+          git config --local user.name "ReedTang"
           git add -A
           git commit -m ":rocket: Fetch BingImage at $(date +'%Y-%m-%d %H:%M')" -a
       - name: 'Push changes'
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.REED_TOKEN }}
           force: true
